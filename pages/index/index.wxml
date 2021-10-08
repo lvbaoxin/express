@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="banner">
+    <image src="../../images/5.png"></image>
+  </view>
+  <view class="forFlex toolsView">
+    <view class="toolsLeft" bindtap="toList">
+      <image class="toolsImg" mode="aspectFit" src="../../images/6.png"></image>
+      <text class="toolsText">包裹列表</text>
+    </view>
+    <view class="toolsLeft" bindtap="toAdd">
+      <image class="toolsImg" mode="aspectFit" src="../../images/7.png"></image>
+      <text class="toolsText">新建包裹</text>
+    </view>
+
+
+  </view>
+  <view class="forFlex toolsView">
+    <view class="toolsLeft" bindtap="toInstructions">
+      <image class="toolsImg" mode="aspectFit" src="../../images/15.png"></image>
+      <text class="toolsText">使用说明</text>
+    </view>
+    <view class="toolsLeft" bindtap="toMatters">
+      <image class="toolsImg" mode="aspectFit" src="../../images/16.png"></image>
+      <text class="toolsText">注意事项</text>
+    </view>
+
+  </view>
+  <button bindtap="getUserProfile" class="getUserProfile" hidden="{{getuserbar2}}">登录</button>
+
+</view>

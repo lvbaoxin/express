@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/add/add",
+    "pages/list/list",
+    "pages/details/details",
+    "pages/instructions/instructions",
+    "pages/matters/matters"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3669F8",
+    "navigationBarTitleText": "英创代理",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "列表",
+        "iconPath": "/images/4.png",
+        "selectedIconPath": "/images/1.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "新建",
+        "iconPath": "/images/3.png",
+        "selectedIconPath": "/images/2.png"
+      }
+     
+    ],
+    "backgroundColor": "#fff",
+    "color": "#666666",
+    "selectedColor": "#3669F8"
+  }
+}

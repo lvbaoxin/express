@@ -1,0 +1,31 @@
+/* pages/matters/matters.wxss */
+.products-top {
+  height: 100rpx;
+  border-bottom: 2rpx solid #f3f4f6;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pro-title {
+  border-left: 6rpx solid #3669F8;
+  font-size: 32rpx;
+  font-weight: bold;
+  padding-left: 10rpx;
+}
+.products {
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 96%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.pro_text{
+  font-size: 28rpx;
+    color: #000000;
+    line-height: 50rpx;
+}

@@ -1,0 +1,10 @@
+<!--pages/matters/matters.wxml-->
+<view class=" products">
+  <view class="products-top">
+    <view class="pro-title">注意事项</view>
+
+  </view>
+  <view class="pro_text">
+    注意事项
+  </view>
+</view>

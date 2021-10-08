@@ -1,0 +1,118 @@
+<!--pages/details/details.wxml-->
+<view class="container">
+  <form catchsubmit="formSubmit">
+    <view class="ViewInside">
+      <view class="expressView">
+        <view class="addTopFlex">
+          <view class="touXiang">
+            <image src="{{headimg}}"></image>
+          </view>
+          <view class="addTopRight">
+            <view class="addTopCode">
+              <view class="userName">
+                {{nickname}}
+              </view>
+              <!-- <view class="codeView" bindtap="{{codeEdit}}">
+                <view class='code'>代理人代码:</view>
+                <input type="number" class="code" placeholder="001" maxlength="3" value="{{agent_code}}"
+                  name="agent_code" disabled="{{inputdisabled}}" />
+                <image class="codeEdit" src="../../images/11.png" hidden="{{editHidden}}"></image>
+              </view> -->
+            </view>
+            <view class="expressLiBottom">
+              <image src="../../images/9.png" class="expressTimeIcon"></image>
+              <view class="expressTime">{{create_time}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="expressView mt30 forFlex">
+        <view class="orderNum">{{japan_to_dalian_code}}</view>
+        <view class="orderCome" data-state="{{state}}">{{state_text}}</view>
+      </view>
+
+      <view class="expressView mt30 ">
+        <view class="forFlex" style=" height: 80rpx;" bindtap="orderHidden">
+          <view class="orderTit">收货人信息</view>
+          <view class="orderHidden" bindtap="orderHidden">
+            <i class="topIcon {{BottomIcon}}"></i>
+          </view>
+        </view>
+        <view hidden="{{userViewHidden}}">
+          <view class="userView ">
+            <input placeholder="请输入收件人姓名" class="userRow" name="recipient_name" value="{{recipient_name}}" disabled="{{inputdisabled}}" />
+          </view>
+          <view class="userView ">
+            <input placeholder="请输入收件人电话" class="userRow" type='number' name="recipient_mobile"
+              value="{{recipient_mobile}}"  maxlength="11" disabled="{{inputdisabled}}" />
+          </view>
+          <view class="userView ">
+            <input placeholder="请输入收件人地址" class="userRow" type='text' name="recipient_address"
+              value="{{recipient_address}}" disabled="{{inputdisabled}}" />
+          </view>
+          <view class="userView ">
+            <input placeholder="请输入收件人身份证号" class="userRow" name="recipient_card_id" type="idcard"
+              value="{{recipient_card_id}}"  maxlength="18" disabled="{{inputdisabled}}"/>
+          </view>
+          <view class="cardView">
+            <image src="{{recipient_card_front}}" class="cardOk1"  bindtap="{{getCardImg}}"></image>
+          </view>
+          <view class="cardView">
+            <image src="{{recipient_card_back}}" class="cardOk2" bindtap="{{getCardImg2}}"></image>
+          </view>
+        </view>
+      </view>
+      <view class="expressView2 mt30 ">
+        <view class="orderNum2"> <input placeholder="请输入日本运单号" value="{{japan_code}}" name="japan_code" type="number"
+          disabled="{{inputdisabled}}"/></view>
+        <view class="selectNum"> <input placeholder="选择数量" class="" name="number_of_cases" value="{{number_of_cases}}"
+            type="number" disabled="{{inputdisabled}}" /></view>
+      </view>
+      <view class="expressView mt30 ">
+        <view class="forFlex" style="height:80rpx;" >
+          <view class="orderTit">代理人代码</view>
+        </view>
+        <view>
+          <view class="userView ">
+            <input placeholder="请输入代理人代码" class="userRow" name="agent_code" maxlength="3" value="{{agent_code}}"  disabled="{{inputdisabled}}"  />
+          </view>
+        </view>
+      </view>
+      <view class="expressView mt30 ">
+        <view class="forFlex" style=" height: 80rpx;" bindtap="goodsHidden">
+          <view class="orderTit"> 商品信息</view>
+          <view class="orderHidden">
+            <i class="topGoodIcon {{bottomGoodIcon}}"></i>
+          </view>
+        </view>
+        <view wx:for="{{goods}}" wx:key="index" class="goodsViewHidden" hidden="{{goodsViewHidden}}">
+          <view class="userView ">
+            <input placeholder="输入商品号" style="bottom:{{bottom_value}}px" adjust-position='200'  class="userRow"
+              name="user"  type="number" bindfocus="inputFocus" value="{{item.goods_bar_code}}" bindblur="inputBlue"
+              bindinput="setPlace" id="place-{{index}}" adjust-position="{{false}}" disabled="{{inputdisabled}}"/>
+            <image class="qrCodeBtn2" src="../../images/14.png" id="place-{{index}}" bindtap="qrCodeBtn2" hidden="{{qrCodeBtn2}}"></image>
+          </view>
+          <view class="userView ">
+            <view class="or">或</view>
+            <input class="userRow" disabled="{{inputdisabled}}" value="{{item.brand_name_specification}}"  placeholder="输入品牌+品名+规格" class="userRow" name="user" id="name-{{index}}" bindinput="setName" />
+          </view>
+          <view class="userView ">
+            <input disabled="{{inputdisabled}}" value="{{item.quantity}}" placeholder="请选择数量" class="userRow" name="user" type="number" id="quantity-{{index}}"
+              bindinput="setNumber" />
+          </view>
+          <view class="hr"></view>
+        </view>
+        <view class="addGoodBtn" bindtap='addItem2' hidden="{{editHidden}}">添加新货</view>
+
+
+
+
+
+      </view>
+      <button class="submitBtn" formType="submit" hidden="{{editHidden}}">提交</button>
+
+
+
+    </view>
+  </form>
+</view>

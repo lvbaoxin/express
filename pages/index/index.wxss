@@ -1,0 +1,88 @@
+/**index.wxss**/
+.banner {
+
+  width: 100%;
+  background: #3669F8;
+  border-radius: 50%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.banner image {
+  height: 364rpx;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.toolsLeft {
+  background: #FFFFFF;
+  border-radius: 20rpx;
+  width: 332rpx;
+  height: 242rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.toolsImg {
+  width: 92rpx;
+  height: 92rpx;
+}
+
+.toolsText {
+  font-size: 32rpx;
+  margin-top: 28rpx;
+  color: #000000;
+
+}
+
+.toolsView {
+  width: 92%;
+  margin: 25rpx auto 0;
+}
+.getuserbar{width:100%;height:100vh;background:rgba(0, 0, 0, 0.4);position:absolute;top:0px;}
+.getuser{width:662rpx;height:377rpx;background:rgba(255,255,255,1);border-radius:16rpx 16rpx 0px 0px; position: absolute;bottom:0;padding:23rpx 45rpx 100rpx 45rpx;z-index: 2}
+.getusertop{display: flex;justify-content:flex-start;align-items: center;align-content: center;flex-direction: row}
+.logo{width:64rpx;height:64rpx; box-sizing:border-box}
+.logo image{width:100%;height:100%}
+.gettit{font-size:30rpx;font-weight:bold;color:rgba(14,14,14,1);line-height:52rpx;box-sizing:border-box;margin-left:10rpx;}
+.getdev{
+border-bottom:2rpx solid rgba(239,239,239,1);
+font-size:28rpx;
+font-weight:500;
+color:rgba(24,24,24,1);
+line-height:52rpx;
+padding:35rpx 0;
+}
+.gettxt{font-size:28rpx;
+font-weight:500;
+color:rgba(160,165,171,1);
+line-height:52rpx;padding:25rpx 0 35rpx}
+.getuserbtn{
+  height:80rpx;
+background:rgba(242,244,247,1);
+border-radius:16rpx;
+font-size:32rpx;
+font-weight:500;
+color:rgba(51,51,51,1);
+border:none;
+}
+.getuserbtn::after{
+  border:none;
+}
+.forlogin{position:absolute;transform: translate(-50%,-50%);top:50%;left:50%;background:#5578fb}
+.getaddress{font-size:24rpx;}
+.getUserProfile{
+  margin-top:20rpx;
+  font-size: 32rpx;
+  margin-top: 28rpx;
+  color: #000000;
+  font-weight: normal;
+  background: #FFFFFF;
+  border-radius: 20rpx;
+}

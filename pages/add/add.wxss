@@ -1,0 +1,228 @@
+/* pages/add/add.wxss */
+
+.expressView {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+}
+
+.addTopFlex {
+  display: flex;
+  align-items: center;
+}
+
+.expressTime {
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.expressTimeIcon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 15rpx;
+  display: block
+}
+
+.expressLiBottom,
+.addTopCode {
+  display: flex;
+  align-items: center;
+}
+
+.addTopCode {
+  margin-bottom: 27rpx;
+}
+
+.touXiang image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  margin-right: 51rpx;
+}
+
+.userName {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #000000;
+  margin-right: 27rpx;
+}
+
+.codeView {
+  height: 42rpx;
+  background: rgba(54, 105, 248, 0.09);
+  border: 1px solid #3669F8;
+  border-radius: 20rpx;
+  font-size: 20rpx;
+  color: #3669F8;
+  text-align: center;
+  line-height: 42rpx;
+  padding: 0rpx 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.codeView input {
+  width: 80rpx;
+}
+
+.codeEdit {
+  width: 18rpx;
+  height: 20rpx;
+  margin-left: 8rpx;
+}
+
+.orderNum,
+.orderTit {
+  font-size: 28rpx;
+  color: #000000;
+  line-height: 32rpx;
+}
+
+.orderCome {
+  background: rgba(54, 105, 248, 0.09);
+  border: 1px solid #3669F8;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 24rpx;
+  color: #3669F8;
+  padding: 5rpx 10rpx;
+  width: 141rpx;
+}
+
+.orderHidden image {
+  width: 26rpx;
+  height: 15rpx;
+  display: block;
+}
+
+.userView {
+  padding-left: 10px;
+background: #F8F8F8;
+  height: 80rpx;
+  width: 100%;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  color: #999999;
+  margin: 15rpx 0px;
+}
+
+.userRow {
+  width: calc(100% - 48rpx);
+  height: 80rpx;
+}
+
+.cardView {
+  height: 322rpx;
+  border-radius: 20rpx;
+  position: relative;
+  margin-bottom:20rpx;
+  background: #F8F8F8;
+  
+  
+}
+
+.cardPos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cardPos image {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 38rpx;
+
+}
+
+.cardText {
+  font-size: 28rpx;
+  color: #000000;
+}
+
+.expressView2 {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.orderNum2,
+.selectNum {
+  background: #fff;
+  border-radius: 20rpx;
+  height: 107rpx;
+  width: 454rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectNum {
+  width: 202rpx;
+}
+
+.selectNum input {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.or {
+  font-size: 28rpx;
+  color: #333333;
+  margin-right: 20rpx;
+}
+
+.hr {
+  height: 1rpx;
+  background: #E5E5E5;
+}
+
+.addGoodBtn
+{
+  height: 100rpx;
+  background: #FFFFFF;
+  border: 2rpx dashed #3669F8;
+  border-radius: 20rpx;
+  font-size: 32rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #3669F8;
+  margin: 30rpx auto 15rpx;
+}
+
+
+.submitBtn {
+  width: 690rpx !important;
+  height: 88rpx;
+  margin: 30rpx auto;
+  background: #3669F8;
+  border-radius: 20rpx;
+  text-align: center;
+  color: #fff;
+  line-height: 88rpx;
+  display: block;
+  padding: 0rpx !important;
+}
+
+.cardOk1,.cardOk2 {
+  height: 322rpx;
+  border-radius: 20rpx;
+}
+.qrCodeBtn {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 8rpx;
+}
+.topIcon,.topGoodIcon{
+  width:26rpx;height:15rpx;display:block;cursor: pointer;
+  background: url(https://yc.ddfeng.cn/uploads/images/default/8.png) no-repeat;
+  background-size: 100% 100%;
+}
+.BottomIcon,.bottomGoodIcon{
+  transform: rotatez(180deg);
+}

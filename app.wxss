@@ -1,0 +1,20 @@
+/**app.wxss**/
+page{
+  background: #F4F4F4;
+}
+.container {
+  height: 100vh;
+  
+}
+.forFlex{
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+}
+.ViewInside{
+  width:92%;margin:0 auto;
+  padding-top:30rpx;
+}
+.mt30{
+  margin-top:30rpx;
+}

@@ -1,0 +1,165 @@
+/* pages/list/list.wxss */
+page {
+  height: 101%;
+}
+
+.search {
+  background: #fff;
+  height: 80rpx;
+  width: 100%;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  padding: 0px 30rpx;
+  box-sizing: border-box;
+  color: #999999;
+}
+
+.searchIcon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 15rpx;
+}
+
+.startTime,
+.endTime {
+  width: 47.5%;
+  height: 100rpx;
+  background: #fff;
+  border-radius: 20rpx;
+}
+
+.startTime .picker,
+.endTime .picker {
+  line-height: 100rpx;
+  text-align: center;
+  color: #999999;
+}
+
+.searchBtn {
+  width: 690rpx !important;
+  height: 88rpx;
+  margin: 30rpx auto;
+  background: #3669F8;
+  border-radius: 44rpx;
+  text-align: center;
+  color: #fff;
+  line-height: 88rpx;
+  display: block;
+  padding: 0rpx !important;
+}
+
+.expressTopIcon {
+  width: 43rpx;
+  height: 43rpx;
+  margin-right: 15rpx;
+  display: block
+}
+
+.expressTit {
+  font-size: 32rpx;
+  color: #000000;
+}
+
+.expressTopLeft {
+  display: flex;
+  align-items: center;
+}
+
+.expressMore {
+  font-size: 28rpx;
+  color: #999999;
+}
+
+.expressView {
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 30rpx;
+}
+
+
+.expressLiMoreImg {
+  width: 26rpx;
+  height: 15rpx;
+  transform: rotate(90deg)
+}
+
+.expressLiTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.expressLiBottom {
+  display: flex;
+  align-items: center;
+}
+
+.expressLi {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  justify-content: space-between;
+  width: 100%;
+  background: #f8f8f8;
+  margin: 20rpx 0;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+}
+
+.expressTimeIcon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 15rpx;
+  display: block
+}
+
+.expressName {
+  font-size: 32rpx;
+  margin-right: 20rpx;
+  color: #000000;
+  width: 130rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.expressCome {
+  border-radius: 20px;
+  text-align: center;
+  font-size: 24rpx;
+  padding: 5rpx 10rpx;
+  width: 141rpx;
+}
+
+.expressCome[data-state="1"] {
+  border: 1px solid #3669F8;
+  color: #3669F8;
+  background: rgba(54, 105, 248, 0.09);
+}
+
+.expressCome[data-state="2"] {
+  border: 1px solid #3669F8;
+  color: #3669F8;
+  background: rgba(54, 105, 248, 0.09);
+}
+
+.expressCome[data-state="3"] {
+
+  background: rgba(1, 194, 105, 0.09);
+  border: 1px solid #01C269;
+  color: #01C269;
+}
+
+.expressCome[data-state="4"] {
+  background: rgba(255, 191, 80, 0.09);
+  border: 1px solid #FFBF50;
+  color: #FFBF50;
+}
+
+.expressTime {
+  font-size: 28rpx;
+  color: #999999;
+}

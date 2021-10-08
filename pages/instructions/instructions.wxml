@@ -1,0 +1,10 @@
+<!--pages/instructions/instructions.wxml-->
+<view class=" products">
+  <view class="products-top">
+    <view class="pro-title">使用说明</view>
+
+  </view>
+  <view class="pro_text">
+    使用说明
+  </view>
+</view>

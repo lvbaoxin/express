@@ -1,0 +1,62 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+  <view class="ViewInside">
+    <form catchsubmit="formSubmit">
+      <view class="search ">
+        <image src="../../images/10.png" class="searchIcon"></image>
+        <input placeholder="收货人名" class="searchinput" name="searchinput" />
+      </view>
+      <view class="forFlex mt30">
+        <view class="startTime">
+          <picker mode="date" value="{{start}}" start="{{start}}" end="{{end}}" data-daystart='{{daystart}}'
+            bindchange="bindDateChange">
+             <view class="picker">
+            {{startTime}} <view>开始时间</view>
+        </view>
+        </picker>
+      </view>
+      <view class="endTime">
+        <picker mode="date" value="{{end}}" start="{{start}}" end="{{end}}" data-dayend='{{dayend}}' bindchange="bindDateChange2">
+          <view class="picker">
+            {{endTime}}<view>结束时间</view>
+          </view>
+        </picker>
+      </view>
+  </view>
+  <button class="searchBtn" formType="submit">搜索</button>
+  </form>
+  <view class="expressView">
+    <view class="forFlex">
+      <view class="expressTopLeft">
+        <image src="../../images/12.png" class="expressTopIcon"></image>
+        <view class="expressTit">
+          包裹列表
+        </view>
+      </view>
+      <!-- <view class="expressMore">
+          全部
+        </view> -->
+    </view>
+    <view class="expressUl">
+      <block wx:for="{{list}}" wx:key="index">
+        <view class="expressLi" id="{{list.id}}" id="{{item.id}}" bindtap="goDetails">
+          <view class="expressLiLeft">
+            <view class="expressLiTop">
+              <view class="expressName">{{item.recipient_name}}</view>
+              <view class="expressCome" data-state="{{item.state}}">{{item.state_text}}</view>
+            </view>
+            <view class="expressLiBottom">
+              <image src="../../images/9.png" class="expressTimeIcon"></image>
+              <view class="expressTime">{{item.create_time}}</view>
+            </view>
+          </view>
+          <view class="expressLiMore">
+            <image src="../../images/8.png" class="expressLiMoreImg"></image>
+          </view>
+        </view>
+      </block>
+
+    </view>
+  </view>
+</view>
+</view>
